@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
   res.send('Server running');
 });
 
+// eslint-disable-next-line no-unused-vars
 app.use(function errorHandler(error, req, res, next) {
   let response;
   if (NODE_ENV === 'production') {
