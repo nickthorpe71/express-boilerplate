@@ -24,3 +24,20 @@ Run the tests `npm test`
 ## Deploying
 
 When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+
+## Cloning
+After cloning from github:
+
+rm -rf .git && git init
+Now you have no previous commits in the test-project for a fresh git project.
+
+Now install the npm dependencies npm install.
+
+Move the example environment file by running mv example.env .env.
+
+The final step would be to open the new project in your editor and edit the package.json:
+
+  {
+-   "name": "express-boilerplate",
++   "name": "test-project",
+    "version": "0.0.1",
